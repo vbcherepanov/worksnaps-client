@@ -18,8 +18,8 @@ $client = HttpClient::create(['http_version' => '2.0']);
 $traceableClient = new \Symfony\Component\HttpClient\TraceableHttpClient($client);
 $traceableClient->setLogger($log);
 $ssl=true;
-$my = 'ZlT3qYACf1Kr3sm6EdNdo6mnDSHqfYVhKTKPhWUH';
-$dp = 'EPuqnRmI8IkFsbLRInkR1qXIZbS8Tpu74qODrPbM';
+$my = '*****';
+$dp = '*****';
 
 $token = new \Worksnaps\SDK\Core\Credentials\AccessToken(
     $dp
