@@ -1,0 +1,37 @@
+{
+  "name": "vbcherepanov/worksnaps-php-sdk",
+  "description": "A powerfull PHP library for the Worksnaps REST API",
+  "keywords": ["Worksnaps", "PHP", "REST", "API"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vitalii Cherepanov",
+      "homepage": "https://gitlab.com/vbcherepanov/"
+    }
+  ],
+  "require": {
+    "php": ">=7.3",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "psr/log": "1.1.3",
+    "fig/http-message-util": "1.1.*",
+    "symfony/http-client": "5.1.*",
+    "ext-simplexml": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "9.3.*",
+    "roave/security-advisories": "dev-master",
+    "monolog/monolog": "^2.1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Worksnaps\\SDK\\": "src"
+    }
+  },
+  "scripts": {
+    "test": [
+      "phpunit --colors=always --verbose"
+    ]
+  }
+}
